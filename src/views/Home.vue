@@ -1,18 +1,31 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <v-container>
+    <v-row>
+      <v-col class="mt-10" md="4" offset-md="4" sm="12">
+        <div class="pokemon--table">
+          <h1>Pokemon List</h1>
+          <pokemon-table class="mt-1"></pokemon-table>
+        </div>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import PokemonTable from '@/components/PokemonTable.vue'
 export default {
-  name: 'Home',
   components: {
-    HelloWorld
+    PokemonTable
+  },
+  data(){
+    return {
+
+    }
+  },
+  computed: {
+  },
+  created(){
+    
   }
 }
 </script>

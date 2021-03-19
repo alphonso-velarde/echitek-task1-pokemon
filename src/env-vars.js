@@ -1,0 +1,1 @@
+export const getPokemonUrl = process.env.VUE_APP_API_URL + "/v2/pokemon";
